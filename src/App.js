@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import IntialScreen from "./pages/IntialScreen";
+import Quiz from "./pages/Quiz";
+import { useSelector } from "react-redux";
 
 function App() {
+  const status = useSelector((store) => store.status);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {status === "initial" && <IntialScreen />}
+      {status === "ready" && <Quiz />}
+      {status === "review" && <Quiz />}
     </div>
   );
 }

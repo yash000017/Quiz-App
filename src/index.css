@@ -1,13 +1,150 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+}
+
+body {
+  margin: 20px 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #696f79;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.init-mid {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.init-img {
+  border-radius: 30px;
+  width: 500px;
+  height: 250px;
+}
+
+.init-mid-right {
+  margin-right: 400px;
+  margin-top: 50px;
+}
+
+.init-p {
+  margin-bottom: 15px;
+}
+
+.init-p-sub {
+  width: 250px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.init-p-sub-left {
+  min-width: 125px;
+}
+
+.init-p-sub-right {
+  min-width: 125px;
+}
+
+.init-btn {
+  position: absolute;
+  right: 10%;
+}
+
+.init-btn-wrapper {
+  width: 160px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  opacity: 0px;
+  background-color: #8692a6;
+  color: white;
+}
+
+/* header */
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* question */
+
+.question-rank {
+  margin-top: 50px;
+}
+
+.question-question {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 600px;
+}
+
+/* option */
+
+.options {
+  margin-top: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.optionItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.radio {
+  accent-color: #696f79;
+}
+
+.span-green {
+  color: green;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.span-red {
+  color: red;
+  font-size: 18px;
+  font-weight: 500;
+}
+/* footer */
+
+.footer-flex {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .footer-btn-wrapper-back {
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  opacity: 0px;
+  background-color: #8692a6;
+  color: white;
+}
+
+.footer-btn-wrapper-next {
+  width: 120px;
+  height: 40px;
+  margin-right: 700px;
+  border: none;
+  border-radius: 30px;
+  opacity: 0px;
+  background-color: #8692a6;
+  color: white; */
+/* } */
